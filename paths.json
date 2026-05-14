@@ -1,8 +1,8 @@
 {
   "mappings": [
-    "/content/aemcustomblock/:/"
+    "/content/aemcustomblocks/:/"
   ],
   "includes": [
-    "/content/aemcustomblock/"
+    "/content/aemcustomblocks/"
   ]
 }
