@@ -190,61 +190,61 @@
       },
       {
         "component": "aem-content",
-        "name": "links_privacy",
+        "name": "privacyLink",
         "label": "Privacy Link",
         "valueType": "string"
       },
       {
+        "component": "text",
+        "name": "privacyLabel",
+        "label": "Privacy Label",
+        "valueType": "string"
+      },
+      {
         "component": "aem-content",
-        "name": "links_terms",
+        "name": "termsLink",
         "label": "Terms Link",
         "valueType": "string"
       },
       {
+        "component": "text",
+        "name": "termsLabel",
+        "label": "Terms Label",
+        "valueType": "string"
+      },
+      {
         "component": "aem-content",
-        "name": "links_cookie",
+        "name": "cookieLink",
         "label": "Cookie Link",
         "valueType": "string"
       },
       {
-        "component": "aem-content",
-        "name": "links_privacyShield",
-        "label": "Privacy Shield Link",
+        "component": "text",
+        "name": "cookieLabel",
+        "label": "Cookie Label",
         "valueType": "string"
       },
       {
         "component": "aem-content",
-        "name": "links_sitemap",
+        "name": "privacyShieldLink",
+        "label": "Privacy Shield Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "privacyShieldLabel",
+        "label": "Privacy Shield Label",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "sitemapLink",
         "label": "Site Map Link",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "links_privacyText",
-        "label": "Privacy Label",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "links_termsText",
-        "label": "Terms Label",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "links_cookieText",
-        "label": "Cookie Label",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "links_privacyShieldText",
-        "label": "Privacy Shield Label",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "links_sitemapText",
+        "name": "sitemapLabel",
         "label": "Site Map Label",
         "valueType": "string"
       },
