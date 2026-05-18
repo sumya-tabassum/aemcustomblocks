@@ -1,20 +1,73 @@
-footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+/* /blocks/footer/footer.css */
+
+.block.footer {
+  background-color: #145c4c;
+  color: #ffffff;
+  padding: 2rem 4rem;
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+/* Layout */
+.block.footer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-footer .footer p {
-  margin: 0;
+/* Left logo */
+.block.footer .footer-left {
+  flex: 1;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+.block.footer .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #c6ff3b;
+}
+
+/* Right section */
+.block.footer .footer-right {
+  flex: 2;
+}
+
+/* Links row */
+.block.footer .footer-right .button-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+/* Links (Franklin converts links into buttons sometimes) */
+.block.footer a,
+.block.footer .button {
+  color: #c6ff3b;
+  background: none;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.block.footer a:hover,
+.block.footer .button:hover {
+  text-decoration: underline;
+}
+
+/* Disclaimer */
+.block.footer .footer-text {
+  font-size: 11px;
+  line-height: 1.5;
+  margin: 5px 0;
+  color: #dcdcdc;
+}
+
+/* Copyright */
+.block.footer .footer-text:last-child {
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .block.footer > div {
+    flex-direction: column;
   }
 }

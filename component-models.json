@@ -180,6 +180,89 @@
     ]
   },
   {
+    "id": "footer",
+    "fields": [
+      {
+        "component": "text",
+        "name": "logoText",
+        "label": "Logo Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "links_privacy",
+        "label": "Privacy Link",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "links_terms",
+        "label": "Terms Link",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "links_cookie",
+        "label": "Cookie Link",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "links_privacyShield",
+        "label": "Privacy Shield Link",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "links_sitemap",
+        "label": "Site Map Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "links_privacyText",
+        "label": "Privacy Label",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "links_termsText",
+        "label": "Terms Label",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "links_cookieText",
+        "label": "Cookie Label",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "links_privacyShieldText",
+        "label": "Privacy Shield Label",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "links_sitemapText",
+        "label": "Site Map Label",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "disclaimer",
+        "label": "Disclaimer",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "copyright",
+        "label": "Copyright",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {

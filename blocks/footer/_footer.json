@@ -1,0 +1,117 @@
+{
+  "definitions": [
+    {
+      "title": "Footer",
+      "id": "footer",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Footer",
+              "model": "footer",
+              "links_privacy": "/",
+              "links_terms": "/",
+              "links_cookie": "/",
+              "links_privacyShield": "/",
+              "links_sitemap": "/",
+              "links_privacyText": "Privacy Policy",
+              "links_termsText": "Terms of Use",
+              "links_cookieText": "Cookie Policy/Settings",
+              "links_privacyShieldText": "Privacy Shield",
+              "links_sitemapText": "Site Map",
+              "disclaimer": "Enter disclaimer text here",
+              "copyright": "© 2026 (ON)Path™. All rights reserved."
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "footer",
+      "fields": [
+        {
+          "component": "text",
+          "name": "logoText",
+          "label": "Logo Text",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "name": "links_privacy",
+          "label": "Privacy Link",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "name": "links_terms",
+          "label": "Terms Link",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "name": "links_cookie",
+          "label": "Cookie Link",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "name": "links_privacyShield",
+          "label": "Privacy Shield Link",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "name": "links_sitemap",
+          "label": "Site Map Link",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "links_privacyText",
+          "label": "Privacy Label",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "links_termsText",
+          "label": "Terms Label",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "links_cookieText",
+          "label": "Cookie Label",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "links_privacyShieldText",
+          "label": "Privacy Shield Label",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "links_sitemapText",
+          "label": "Site Map Label",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "disclaimer",
+          "label": "Disclaimer",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "copyright",
+          "label": "Copyright",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
