@@ -1,136 +1,63 @@
-/* /blocks/footer/footer.css */
-
-/* ✅ Base (Desktop first) */
+/* ✅ Base (Mobile FIRST: <1200px) */
 .block.footer {
   background-color: #145c4c;
   color: #ffffff;
-  padding: 2rem 4rem;
+  padding: 1rem;
+  text-align: center;
 }
 
-/* Layout */
 .block.footer > div {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Left logo */
-.block.footer .footer-left {
-  flex: 1;
-}
-
+/* Logo */
 .block.footer .logo {
-  font-size: 28px;
-  font-weight: bold;
-  color: #c6ff3b;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
-/* Right section */
-.block.footer .footer-right {
-  flex: 2;
-}
-
-/* Links */
+/* Links (stacked in mobile) */
 .block.footer .footer-links {
   display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-
-/* Link styles */
-.block.footer a,
-.block.footer .button {
-  color: #c6ff3b;
-  background: none;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.block.footer a:hover,
-.block.footer .button:hover {
-  text-decoration: underline;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 /* Text */
 .block.footer .footer-text {
   font-size: 11px;
-  line-height: 1.5;
-  margin: 5px 0;
-  color: #dcdcdc;
+  margin-top: 10px;
 }
 
-/* SMALL DEVICES (phones <600px) */
-@media only screen and (max-width: 600px) {
 
-  .block.footer {
-    padding: 1rem;
-    text-align: center;
-  }
-
-  .block.footer > div {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .block.footer .footer-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .block.footer .logo {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-}
-
-/* SMALL TABLETS (600px and up) */
-@media only screen and (min-width: 600px) {
-
-  .block.footer {
-    padding: 1.5rem 2rem;
-    background-color: aqua;
-
-  }
-
-  .block.footer .footer-links {
-    justify-content: center;
-    gap: 1rem;
-  }
-}
-
-/* MEDIUM DEVICES (768px and up) */
-@media only screen and (min-width: 768px) {
-
-  .block.footer {
-    padding: 2rem 3rem;
-    background-color: pink;
-  }
-
-  .block.footer .footer-links {
-    justify-content: flex-start;
-  }
-}
-
-/* LARGE DEVICES (992px and up) */
-@media only screen and (min-width: 992px) {
+/* ✅ Desktop ONLY (>1200px) */
+@media only screen and (min-width: 1200px) {
 
   .block.footer {
     padding: 2rem 4rem;
-    background-color: lightblue;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: pink; /* test desktop */
   }
 
   .block.footer > div {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
-}
 
-/* EXTRA LARGE (1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-  .block.footer {
-    max-width: 1200px;
-    margin: 0 auto;
+  /* Logo bigger */
+  .block.footer .logo {
+    font-size: 28px;
   }
+
+  /* Links horizontal */
+  .block.footer .footer-links {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
 }
