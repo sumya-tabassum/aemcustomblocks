@@ -90,6 +90,8 @@
 
   .block.footer {
     padding: 1.5rem 2rem;
+    background-color: aqua;
+
   }
 
   .block.footer .footer-links {
@@ -103,6 +105,7 @@
 
   .block.footer {
     padding: 2rem 3rem;
+    background-color: pink;
   }
 
   .block.footer .footer-links {
@@ -115,6 +118,7 @@
 
   .block.footer {
     padding: 2rem 4rem;
+    background-color: lightblue;
   }
 
   .block.footer > div {
