@@ -1,5 +1,6 @@
 /* /blocks/footer/footer.css */
 
+/* ✅ Base (Desktop first) */
 .block.footer {
   background-color: #145c4c;
   color: #ffffff;
@@ -30,15 +31,15 @@
   flex: 2;
 }
 
-/* Links row */
-.block.footer .footer-right .button-container {
+/* Links */
+.block.footer .footer-links {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
   margin-bottom: 1rem;
 }
 
-/* Links (Franklin converts links into buttons sometimes) */
+/* Link styles */
 .block.footer a,
 .block.footer .button {
   color: #c6ff3b;
@@ -52,7 +53,7 @@
   text-decoration: underline;
 }
 
-/* Disclaimer */
+/* Text */
 .block.footer .footer-text {
   font-size: 11px;
   line-height: 1.5;
@@ -60,14 +61,72 @@
   color: #dcdcdc;
 }
 
-/* Copyright */
-.block.footer .footer-text:last-child {
-  margin-top: 10px;
-}
+/* SMALL DEVICES (phones <600px) */
+@media only screen and (max-width: 600px) {
 
-/* Responsive */
-@media (max-width: 768px) {
+  .block.footer {
+    padding: 1rem;
+    text-align: center;
+  }
+
   .block.footer > div {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .block.footer .footer-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .block.footer .logo {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}
+
+/* SMALL TABLETS (600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .block.footer {
+    padding: 1.5rem 2rem;
+  }
+
+  .block.footer .footer-links {
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* MEDIUM DEVICES (768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .block.footer {
+    padding: 2rem 3rem;
+  }
+
+  .block.footer .footer-links {
+    justify-content: flex-start;
+  }
+}
+
+/* LARGE DEVICES (992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .block.footer {
+    padding: 2rem 4rem;
+  }
+
+  .block.footer > div {
+    flex-direction: row;
+  }
+}
+
+/* EXTRA LARGE (1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .block.footer {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
