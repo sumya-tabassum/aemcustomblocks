@@ -1,12 +1,18 @@
+
+/* footer css changes */
+
 .block.footer {
   background-color: #145c4c;
-  color: #ffffff;
+  color: #FEFFF6;
   padding: 1rem;
   text-align: center;
 }
+.block.footer.links{
+  color:#DDE675;
+}
 
 
-.footer-container {
+.block.footer-container {
   display: flex;
   flex-direction: row-reverse; /* This moves logo to right */
   justify-content: space-between;
