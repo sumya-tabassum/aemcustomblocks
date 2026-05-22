@@ -1,3 +1,11 @@
+
+.block.footer {
+  background-color: #145c4c;
+  color: #FEFFF6;
+  padding: 1rem;
+}
+
+
 .block.footer .default-content-wrapper {
   display: grid;
   grid-template-columns: auto 1fr;
