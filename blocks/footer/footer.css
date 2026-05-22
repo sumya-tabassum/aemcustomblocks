@@ -11,12 +11,14 @@
   color:#DDE675;
 }
 
-.footer-container {
+.block.footer .default-content-wrapper 
+ {
   display: flex;
   flex-direction: row-reverse; /* This moves logo to right */
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
+  border: 5px solid red;
 }
 .footer-logo {
   width: 150px; /* Adjust as needed */
