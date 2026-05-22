@@ -1,63 +1,11 @@
-/* ✅ Base (Mobile FIRST: <1200px) */
-.block.footer {
-  background-color: #145c4c;
-  color: #ffffff;
-  padding: 1rem;
-  text-align: center;
-}
-
-.block.footer > div {
+.footer-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row-reverse; /* This moves logo to right */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
-
-/* Logo */
-.block.footer .logo {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-/* Links (stacked in mobile) */
-.block.footer .footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-/* Text */
-.block.footer .footer-text {
-  font-size: 11px;
-  margin-top: 10px;
-}
-
-
-/* ✅ Desktop ONLY (>1200px) */
-@media only screen and (min-width: 1200px) {
-
-  .block.footer {
-    padding: 2rem 4rem;
-    text-align: left;
-    max-width: 1200px;
-    margin: 0 auto;
-    
-  }
-
-  .block.footer > div {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  /* Logo bigger */
-  .block.footer .logo {
-    font-size: 28px;
-  }
-
-  /* Links horizontal */
-  .block.footer .footer-links {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
+.footer-logo {
+  width: 150px; /* Adjust as needed */
+  height: auto;
 }
