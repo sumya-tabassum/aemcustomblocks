@@ -20,7 +20,13 @@
   gap: 20px;
   border: 5px solid red;
 }
-.footer-logo {
-  width: 150px; /* Adjust as needed */
-  height: auto;
+
+
+.block.footer .default-content-wrapper p:first-child {
+  flex-shrink: 0;
+}
+
+/* ✅ Content (rest of text) */
+.block.footer .default-content-wrapper p:not(:first-child) {
+  flex: 1;
 }
